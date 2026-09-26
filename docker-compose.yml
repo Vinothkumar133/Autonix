@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - PAYMENT_MODE=DEMO
+      - LNBITS_URL=http://lnbits:5000
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    restart: unless-stopped
+
+  lnbits:
+    image: lnbits/lnbits:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=5000
+      - LNBITS_BACKEND_WALLET_CLASS=FakeWallet
+      - LNBITS_DATA_FOLDER=/data
+    volumes:
+      - lnbits_data:/data
+    restart: unless-stopped
+
+volumes:
+  lnbits_data:

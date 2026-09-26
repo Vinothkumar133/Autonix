@@ -1,0 +1,7 @@
+{
+  "name": "Machine Money",
+  "description": "Autonomous payments for AI agents using HTTP 402, Lightning invoices, and deterministic spending policies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
