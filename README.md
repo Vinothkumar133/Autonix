@@ -1,4 +1,4 @@
-# Machine Money — Autonomous Payments for AI Agents
+# Autonix — Autonomous Payments for AI Agents
 
 > **"AI agents can act autonomously. Machine Money gives them a controlled way to pay for the services they need."**
 > 
@@ -19,9 +19,9 @@ Current systems rely on:
 - Prepaid API keys vulnerable to balance exhaustion or key leaks
 - Manual human checkout flows that break autonomous agent execution
 
-## 2. The Solution: Machine Money
+## 2. The Solution: Autonix
 
-**Machine Money** introduces autonomous micro-commerce for AI software using the open **L402 (HTTP 402 Payment Required)** protocol over the Bitcoin Lightning Network, governed by a **deterministic payment policy engine**.
+**Autonix** introduces autonomous micro-commerce for AI software using the open **L402 (HTTP 402 Payment Required)** protocol over the Bitcoin Lightning Network, governed by a **deterministic payment policy engine**.
 
 The AI agent does not have unlimited spending authority. Instead:
 - **AI decides WHAT it needs.**
@@ -103,7 +103,7 @@ Visit `http://localhost:3000` to access the developer dashboard.
 
 ## 6. Running with Lightning Regtest (Polar + LNbits)
 
-To connect Machine Money to a real local Lightning test network:
+To connect Autonix to a real local Lightning test network:
 
 1. Install and launch **Polar** ([lightningpolar.com](https://lightningpolar.com)).
 2. Create a test network with 2 LND nodes and fund a channel between them.
